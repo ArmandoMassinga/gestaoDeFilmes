@@ -1,0 +1,78 @@
+.edit-movie-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .edit-movie-container h2 {
+    color: #f4c518;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  .edit-movie-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-movie-form label {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .edit-movie-form input,
+  .edit-movie-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .edit-movie-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .edit-movie-form button {
+    background: #f4c518;
+    color: #000;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .edit-movie-form button:hover {
+    background: #ffdb4d;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .edit-movie-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .edit-movie-form input,
+    .edit-movie-form textarea {
+      font-size: 14px;
+    }
+  
+    .edit-movie-form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

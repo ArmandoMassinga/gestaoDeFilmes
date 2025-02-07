@@ -1,0 +1,68 @@
+/* Fundo da tela com imagem cinematográfica */
+.login-container {
+    background: url("https://source.unsplash.com/1600x900/?movie,cinema") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Caixa centralizada para login */
+  .login-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    width: 350px;
+  }
+  
+  /* Título */
+  .login-box h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulo */
+  .login-box p {
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de entrada */
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* Efeito para os inputs */
+  .login-box input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Botão de login */
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffcc00;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Efeito hover */
+  .login-box button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+  }  

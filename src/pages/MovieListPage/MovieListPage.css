@@ -1,0 +1,313 @@
+.movie-list-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .movie-list-container h1 {
+    color: #f4c518;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .add-movie-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #f4c518;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .add-movie-btn:hover {
+    background: #ffdb4d;
+  }
+  
+  .movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2c2c2c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .movie-table th,
+  .movie-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .movie-table th {
+    background: #f4c518;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .movie-table td {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .movie-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background: #ff1a1a;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .movie-list-container {
+      width: 95%;
+    }
+  
+    .movie-table th,
+    .movie-table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  /* MovieListPage.css */
+
+.add-movie-btn {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+button:nth-child(2):hover {
+  background-color: #c82333;
+}
+/* Modal Container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    width: 60%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Título do Modal */
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Estilo dos Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Campos de Entrada */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 48%;
+    margin-right: 4%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* Estilo ao Focar nos Inputs */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botões */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+/* Botão Cancelar */
+button:last-child {
+    background-color: #ccc;
+}
+
+button:last-child:hover {
+    background-color: #aaa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Estilos adicionais para separar campos */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.form-row .form-group:nth-child(odd) {
+    margin-right: 4%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.edit-btn {
+    background-color: #4CAF50;  /* Verde */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049;
+  }
+  

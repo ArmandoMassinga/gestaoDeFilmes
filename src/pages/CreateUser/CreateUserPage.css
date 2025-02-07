@@ -1,0 +1,78 @@
+/* Fundo da tela com imagem cinematográfica */
+.create-user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?movie,cinema") center/cover no-repeat;
+}
+
+/* Caixa centralizada para criação de usuário */
+.create-user-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    width: 350px;
+}
+
+/* Título */
+.create-user-box h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada */
+.create-user-box input,
+.create-user-box select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Efeito para os inputs */
+.create-user-box input:focus,
+.create-user-box select:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Botão de criação */
+.create-user-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffcc00;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito hover */
+.create-user-box button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Botão desativado */
+.create-user-box button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Estilização para melhor contraste do texto nos inputs */
+.create-user-box input::placeholder,
+.create-user-box select {
+    color: rgba(255, 255, 255, 0.7);
+}

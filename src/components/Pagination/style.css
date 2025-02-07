@@ -1,0 +1,51 @@
+
+/* CSS - style.css */
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.pagination-banner {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pagination-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.pagination-button:hover {
+  transform: scale(1.1);
+}
+
+.arrow-left {
+  transform: rotate(180deg);
+}

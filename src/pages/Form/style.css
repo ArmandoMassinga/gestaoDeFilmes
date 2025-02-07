@@ -1,0 +1,77 @@
+/* Container do formulário de avaliação */
+.dsmovie-form-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;  /* Fundo escuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do formulário */
+.dsmovie-form {
+    width: calc(100% - 20px);
+}
+
+/* Estilos para os campos do formulário */
+.dsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo das labels dos campos */
+.dsmovie-form-group label {
+    font-size: 14px;
+    color: #bbb; /* Cor de texto suave */
+}
+
+/* Contêiner do botão de salvar */
+.dsmovie-form-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagem do card do filme */
+.dsmovie-movie-card-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Parte inferior do card com o título e formulário */
+.dsmovie-card-bottom-container {
+    background-color: #333; /* Fundo escuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Estilo do título do filme */
+.dsmovie-card-bottom-container h3 {
+    color: #fff; /* Cor clara para o título */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+.dsmovie-btn {
+    background-color: #ff9800; /* Cor de fundo destacada para o botão */
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Cor do texto no botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão cancelar */
+.dsmovie-btn.mt-3 {
+    background-color: #777; /* Cor mais suave para o botão de cancelar */
+}
