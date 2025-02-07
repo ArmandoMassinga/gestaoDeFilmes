@@ -23,18 +23,14 @@ function App() {
           <Route
             path="/movies"
             element={
-              <PrivateRoute>
                 <MovieListPage />
-              </PrivateRoute>
             }
           />
 
           <Route
             path="/add"
             element={
-              <PrivateRoute>
                 <AddMoviePage />
-              </PrivateRoute>
             }
           />
 

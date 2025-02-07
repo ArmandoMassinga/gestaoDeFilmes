@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"; // Importa SweetAlert2
-import Skeleton from "react-loading-skeleton"; // Importa Skeleton Loader
 import "react-loading-skeleton/dist/skeleton.css"; // Estilos do Skeleton
 import { login } from "../../services/api"; // Importa a função de login
 import { Link } from "react-router-dom"; // Importa o Link do react-router-dom
@@ -19,7 +18,9 @@ const LoginPage: React.FC = () => {
 
     try {
       const userData = await login(username, password);
-      localStorage.setItem("auth", JSON.stringify(userData)); // Guarda os dados do usuário
+
+      // Armazena apenas o token no localStorage
+      localStorage.setItem("authToken", userData.token); 
 
       Swal.fire({
         title: "Login realizado!",
@@ -32,16 +33,13 @@ const LoginPage: React.FC = () => {
       // Verifica o nível de acesso do usuário e redireciona para a página apropriada
       const accessLevel = userData.accessLevel;
 
-      console.log("USER_DATA", userData)
-
-      console.log("ACESS_LEVEL", accessLevel)
-      if (accessLevel === "admin") {
-        setTimeout(() => navigate("/movies"), 2000); // Redireciona para a página de administrador
-      } else if (accessLevel === "user") {
-        setTimeout(() => navigate("/listing"), 2000); // Redireciona para a página do usuário comum
-      } else {
-        setTimeout(() => navigate("/movies"), 2000); // Caso não tenha um acesso específico
-      }
+      setTimeout(() => {
+        if (accessLevel === "admin") {
+          navigate("/movies");
+        } else {
+          navigate("/listing");
+        }
+      }, 2000);
 
     } catch (error) {
       Swal.fire({
